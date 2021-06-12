@@ -2,4 +2,7 @@
     <string name="app_name">TheCrypt</string>
     <string name="brand_name1">The</string>
     <string name="brand_name2">Crypt</string>
+    <string name="crypt">Crypt</string>
+    <string name="bag">Bag</string>
+    <string name="pins">Pins</string>
 </resources>
