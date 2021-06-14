@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="coin_head">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#03DAC5</item>
+        <item name="android:fontWeight">700</item>
+        <item name="android:fontFamily">@font/cinzel_variablefont_wght</item>
+    </style>
+</resources>
