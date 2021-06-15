@@ -37,6 +37,6 @@
         android:textAppearance="@style/coin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="40dp" />
+        android:layout_marginEnd="30dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

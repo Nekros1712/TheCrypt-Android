@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import retrofit2.Callback
 
 class CryptsAdapter(
     private val context: Context,
@@ -20,8 +19,10 @@ class CryptsAdapter(
     override fun onBindViewHolder(holder: CryptsViewHolder, position: Int) {
         val name = totalData!![position].name
         val price = totalData[position].market_data.current_price.usd.toString()
+        val growth = "%.2f".format(totalData[position].market_data.price_change_percentage_24h)
         holder.coinName.text = name.substring(startIndex = 0, endIndex = if(name.length > 8) 8 else name.length)
         holder.coinPrice.text = price.substring(startIndex = 0, endIndex = if(price.length > 8) 8 else price.length)
+        holder.coinGrowth.text = growth
     }
 
     override fun getItemCount(): Int {
