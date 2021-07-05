@@ -18,7 +18,7 @@ class CryptsAdapter(
 
     override fun onBindViewHolder(holder: CryptsViewHolder, position: Int) {
         val name = totalData!![position].name
-        val price = totalData[position].market_data.current_price.usd.toString()
+        val price = "%.3f".format(totalData[position].market_data.current_price.usd)
         val growth = "%.2f".format(totalData[position].market_data.price_change_percentage_24h)
         holder.coinName.text = name.substring(startIndex = 0, endIndex = if(name.length > 8) 8 else name.length)
         holder.coinPrice.text = price.substring(startIndex = 0, endIndex = if(price.length > 8) 8 else price.length)
